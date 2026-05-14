@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML5 Semantic Elements</title>
+
+    <style>
+
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            background-color:#f4f4f4;
+        }
+
+        /* HEADER */
+        header{
+            background-color:darkblue;
+            color:white;
+            padding:20px;
+            text-align:center;
+            font-size:35px;
+        }
+
+        /* NAVIGATION */
+        nav{
+            background-color:#333;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-size:18px;
+        }
+
+        nav a:hover{
+            color:yellow;
+        }
+
+        /* MAIN */
+        main{
+            padding:20px;
+        }
+
+        /* SECTION */
+        section{
+            background-color:white;
+            padding:20px;
+            margin-bottom:20px;
+            border-radius:10px;
+            box-shadow:0px 0px 10px gray;
+        }
+
+        /* ARTICLE */
+        article{
+            background-color:#e8f0ff;
+            padding:15px;
+            margin-top:10px;
+            border-left:5px solid blue;
+        }
+
+        /* ASIDE */
+        aside{
+            background-color:#fff3cd;
+            padding:15px;
+            border-left:5px solid orange;
+            margin-top:15px;
+        }
+
+        /* FIGURE */
+        figure{
+            text-align:center;
+        }
+
+        figure img{
+            width:300px;
+            border-radius:10px;
+        }
+
+        figcaption{
+            font-style:italic;
+            margin-top:8px;
+        }
+
+        /* FOOTER */
+        footer{
+            background-color:black;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:20px;
+        }
+
+        /* TABLE */
+        table{
+            width:100%;
+            border-collapse:collapse;
+        }
+
+        table, th, td{
+            border:1px solid black;
+        }
+
+        th, td{
+            padding:10px;
+            text-align:center;
+        }
+
+        /* DIALOG */
+        dialog{
+            padding:20px;
+            border-radius:10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        HTML5 Semantic Elements
+    </header>
+
+    <!-- NAV -->
+    <nav>
+
+        <a href="#">Home</a>
+
+        <a href="#">About</a>
+
+        <a href="#">Services</a>
+
+        <a href="#">Contact</a>
+
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- SECTION -->
+        <section>
+
+            <h2>About Semantic Elements</h2>
+
+            <p>
+                Semantic elements clearly describe their meaning
+                to both browser and developer.
+            </p>
+
+            <!-- ARTICLE -->
+            <article>
+
+                <h3>What is Article Tag?</h3>
+
+                <p>
+                    The article tag defines independent content
+                    like blogs, news, or posts.
+                </p>
+
+            </article>
+
+            <!-- ASIDE -->
+            <aside>
+
+                <h3>Quick Tip</h3>
+
+                <p>
+                    Semantic tags improve SEO and readability.
+                </p>
+
+            </aside>
+
+        </section>
+
+        <!-- SECTION -->
+        <section>
+
+            <h2>Figure Example</h2>
+
+            <!-- FIGURE -->
+            <figure>
+
+                <img src="https://picsum.photos/300/200"
+                alt="Sample Image">
+
+                <!-- FIGCAPTION -->
+                <figcaption>
+                    Beautiful Nature Image
+                </figcaption>
+
+            </figure>
+
+        </section>
+
+        <!-- SECTION -->
+        <section>
+
+            <h2>Highlighted Text</h2>
+
+            <p>
+                HTML5 introduces the
+                <mark>mark tag</mark>
+                for highlighted text.
+            </p>
+
+            <p>
+                Today's date is
+                <time>12 May 2026</time>
+            </p>
+
+        </section>
+
+        <!-- SECTION -->
+        <section>
+
+            <h2>Details and Summary</h2>
+
+            <!-- DETAILS -->
+            <details>
+
+                <!-- SUMMARY -->
+                <summary>
+                    Click to Show More Information
+                </summary>
+
+                <p>
+                    HTML5 semantic tags make webpage structure
+                    more meaningful and organized.
+                </p>
+
+            </details>
+
+        </section>
+
+        <!-- SECTION -->
+        <section>
+
+            <h2>Abbreviation and Citation</h2>
+
+            <p>
+                <abbr title="Hyper Text Markup Language">
+                    HTML
+                </abbr>
+                is used to create webpages.
+            </p>
+
+            <p>
+                Famous Book:
+                <cite>Web Designing Basics</cite>
+            </p>
+
+        </section>
+
+        <!-- SECTION -->
+        <section>
+
+            <h2>Progress and Meter</h2>
+
+            <p>Course Progress:</p>
+
+            <!-- PROGRESS -->
+            <progress value="70" max="100"></progress>
+
+            <br><br>
+
+            <p>Battery Level:</p>
+
+            <!-- METER -->
+            <meter value="0.6">60%</meter>
+
+        </section>
+
+        <!-- SECTION -->
+        <section>
+
+            <h2>Output Example</h2>
+
+            <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+
+                <input type="number" id="a" value="10">
+
+                +
+
+                <input type="number" id="b" value="20">
+
+                =
+
+                <!-- OUTPUT -->
+                <output name="result">30</output>
+
+            </form>
+
+        </section>
+
+        <!-- SECTION -->
+        <section>
+
+            <h2>Template Example</h2>
+
+            <!-- TEMPLATE -->
+            <template>
+                <p>This is hidden reusable content.</p>
+            </template>
+
+            <p>
+                Template tag stores hidden content.
+            </p>
+
+        </section>
+
+        <!-- SECTION -->
+        <section>
+
+            <h2>Canvas Example</h2>
+
+            <!-- CANVAS -->
+            <canvas id="myCanvas"
+            width="300"
+            height="150"
+            style="border:2px solid black;">
+            </canvas>
+
+        </section>
+
+        <!-- SECTION -->
+        <section>
+
+            <h2>Code Example</h2>
+
+            <!-- CODE -->
+            <code>
+                &lt;h1&gt;Hello World&lt;/h1&gt;
+            </code>
+
+            <br><br>
+
+            <!-- PRE -->
+            <pre>
+Line 1
+Line 2
+Line 3
+            </pre>
+
+        </section>
+
+        <!-- SECTION -->
+        <section>
+
+            <h2>Address Example</h2>
+
+            <!-- ADDRESS -->
+            <address>
+
+                Silver Oak University <br>
+
+                Ahmedabad, Gujarat <br>
+
+                Email:
+                info@silveroakuni.ac.in
+
+            </address>
+
+        </section>
+
+        <!-- SECTION -->
+        <section>
+
+            <h2>Dialog Example</h2>
+
+            <!-- DIALOG -->
+            <dialog open>
+
+                Welcome to HTML5 Semantic Elements Page!
+
+            </dialog>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        © 2026 HTML5 Semantic Webpage
+
+    </footer>
+
+    <!-- CANVAS SCRIPT -->
+    <script>
+
+        var c = document.getElementById("myCanvas");
+
+        var ctx = c.getContext("2d");
+
+        ctx.fillStyle = "blue";
+
+        ctx.fillRect(50, 30, 200, 80);
+
+    </script>
+
+</body>
+</html>

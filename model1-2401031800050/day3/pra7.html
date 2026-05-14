@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triangle Animation</title>
+
+  <style>
+    body{
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111;
+      overflow: hidden;
+    }
+
+    .container{
+      position: relative;
+      width: 400px;
+      height: 400px;
+    }
+
+    .box{
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(90deg, #ff7700, #ffffff,rgb(12, 241, 92) );
+      
+      position: absolute;
+
+      animation:
+        triangleMove 6s linear infinite,
+        rotateScale 2s ease-in-out infinite;
+    }
+
+    /* Rotation + Scaling */
+    @keyframes rotateScale{
+      0%{
+        transform: rotate(0deg) scale(1);
+      }
+
+      50%{
+        transform: rotate(180deg) scale(1.5);
+      }
+
+      100%{
+        transform: rotate(360deg) scale(1);
+      }
+    }
+
+    /* Triangle Movement */
+    @keyframes triangleMove{
+      0%{
+        top: 0;
+        left: 160px;
+      }
+
+      33%{
+        top: 280px;
+        left: 0;
+      }
+
+      66%{
+        top: 280px;
+        left: 320px;
+      }
+
+      100%{
+        top: 0;
+        left: 160px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="box"></div>
+  </div>
+
+</body>
+</html>
