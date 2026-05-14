@@ -1,0 +1,89 @@
+<!-- position media query z index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+        background-color: lightgray;
+        }
+      .box1 {
+        width: 200px;
+        height: 200px;
+        margin: 100px;
+        background-color: red;
+        position: fixed;
+        top: 50px;
+        left: 50px;
+      }
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: fixed;
+        top: 70px;
+        left: 70px;
+      }
+      .box3 {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: absolute;
+        z-index: 1;
+        top: 90px;
+        left: 90px;
+      }
+      .box4 {
+        width: 80px;
+        height: 80px;
+        background-color: yellow;
+        position: absolute;
+        z-index: 2;
+        top: 110px;
+        left: 110px;
+      }
+      .box5{
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: cyan;
+      }
+        .box6{
+            float: right;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 29, 67);
+        }
+      @media screen and (max-width: 600px) {
+        body{
+            background-color: lightblue;
+        }
+        .box1 {
+          background-color: purple;
+        }
+        .box2 {
+          background-color: orange;
+        }
+        .box3 {
+          background-color: rgb(42, 91, 91);
+        }
+        .box4 {
+          background-color: magenta;
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">fixed 1</div>
+    <div class="box2">fixed 2</div>
+    <div class="box3">z index 1</div>
+    <div class="box4">z index 2</div>
+
+    <div class="box5">float left</div>
+    <div class="box6">float right</div>
+  </body>
+</html>
