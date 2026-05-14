@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tasneem Resume</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f2f2f2;
+      padding:30px;
+      animation: bgMove 8s infinite alternate;
+    }
+
+    /* Background Animation */
+    @keyframes bgMove{
+      0%{
+        background:#f2f2f2;
+      }
+      100%{
+        background:#dbeafe;
+      }
+    }
+
+    .resume{
+      width:900px;
+      margin:auto;
+      background:white;
+      display:flex;
+      box-shadow:0 0 20px rgba(0,0,0,0.2);
+      overflow:hidden;
+
+      animation: fadeIn 1.5s ease;
+      transition:0.5s;
+    }
+
+    .resume:hover{
+      transform:scale(1.01);
+      box-shadow:0 0 30px rgba(0,0,0,0.3);
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(50px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    .left{
+      width:35%;
+      background:#1e293b;
+      color:white;
+      padding:30px;
+      text-align:center;
+      animation: slideLeft 1.2s ease;
+    }
+
+    @keyframes slideLeft{
+      from{
+        transform:translateX(-100px);
+        opacity:0;
+      }
+      to{
+        transform:translateX(0);
+        opacity:1;
+      }
+    }
+
+    .profile-img{
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      border:4px solid white;
+      margin-bottom:20px;
+      object-fit:cover;
+
+      animation: float 3s ease-in-out infinite;
+      transition:0.5s;
+    }
+
+    .profile-img:hover{
+      transform:scale(1.08) rotate(5deg);
+    }
+
+    @keyframes float{
+      0%{
+        transform:translateY(0);
+      }
+      50%{
+        transform:translateY(-10px);
+      }
+      100%{
+        transform:translateY(0);
+      }
+    }
+
+    .left h1{
+      font-size:30px;
+      margin-bottom:5px;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow{
+      from{
+        text-shadow:0 0 5px white;
+      }
+      to{
+        text-shadow:0 0 20px #60a5fa;
+      }
+    }
+
+    .left h3{
+      font-weight:normal;
+      margin-bottom:30px;
+      color:#cbd5e1;
+    }
+
+    .section{
+      margin-bottom:30px;
+      text-align:left;
+      animation: fadeUp 1.5s ease;
+    }
+
+    @keyframes fadeUp{
+      from{
+        opacity:0;
+        transform:translateY(30px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    .section h2{
+      font-size:20px;
+      margin-bottom:15px;
+      border-bottom:2px solid white;
+      padding-bottom:5px;
+      transition:0.4s;
+    }
+
+    .section h2:hover{
+      color:#60a5fa;
+      letter-spacing:1px;
+    }
+
+    .section p,
+    .section li{
+      font-size:15px;
+      line-height:1.8;
+    }
+
+    .section ul{
+      padding-left:20px;
+    }
+
+    .section li{
+      transition:0.3s;
+    }
+
+    .section li:hover{
+      transform:translateX(8px);
+      color:#93c5fd;
+    }
+
+    .right{
+      width:65%;
+      padding:40px;
+      animation: slideRight 1.2s ease;
+    }
+
+    @keyframes slideRight{
+      from{
+        transform:translateX(100px);
+        opacity:0;
+      }
+      to{
+        transform:translateX(0);
+        opacity:1;
+      }
+    }
+
+    .right-section{
+      margin-bottom:35px;
+      animation: fadeUp 1.5s ease;
+    }
+
+    .right-section h2{
+      color:#1e293b;
+      margin-bottom:20px;
+      border-bottom:2px solid #1e293b;
+      padding-bottom:5px;
+      transition:0.4s;
+    }
+
+    .right-section h2:hover{
+      color:#2563eb;
+      letter-spacing:1px;
+    }
+
+    .item{
+      margin-bottom:20px;
+      padding:10px;
+      border-radius:10px;
+      transition:0.4s;
+    }
+
+    .item:hover{
+      background:#f1f5f9;
+      transform:translateX(10px);
+    }
+
+    .item h3{
+      color:#0f172a;
+      margin-bottom:5px;
+    }
+
+    .item span{
+      color:gray;
+      font-size:14px;
+    }
+
+    .item p{
+      margin-top:10px;
+      line-height:1.7;
+      color:#333;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="resume">
+
+    <div class="left">
+
+      <img src="images.png" alt="Profile Photo" class="profile-img">
+
+      <h1>TASNEEM</h1>
+      <h3>Computer Science Student</h3>
+
+      <div class="section">
+        <h2>Contact</h2>
+        <p><b>Address:</b><br>Surat, Gujarat</p>
+        <p><b>Phone:</b><br>+91 98765 43210</p>
+        <p><b>Email:</b><br>tasneem@email.com</p>
+      </div>
+
+      <div class="section">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li>HTML & CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>C Programming</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Languages</h2>
+        <ul>
+          <li>English</li>
+          <li>Hindi</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Coding</li>
+          <li>Gaming</li>
+          <li>Reading Tech Blogs</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="right">
+
+      <div class="right-section">
+        <h2>Profile</h2>
+        <p>
+          Motivated Computer Science student with strong knowledge of
+          programming, web development, and database management.
+          Passionate about building user-friendly applications and
+          learning modern technologies.
+        </p>
+      </div>
+
+      <div class="right-section">
+        <h2>Projects</h2>
+
+        <div class="item">
+          <h3>Student Management System</h3>
+          <span>HTML, CSS, JavaScript, SQL</span>
+
+          <p>
+            Developed a web-based student management system for storing
+            and managing student records efficiently.
+          </p>
+        </div>
+
+        <div class="item">
+          <h3>Portfolio Website</h3>
+          <span>HTML, CSS</span>
+
+          <p>
+            Designed and created a responsive personal portfolio website
+            showcasing projects and technical skills.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="right-section">
+        <h2>Education</h2>
+
+        <div class="item">
+          <h3>Bachelor of Technology in Computer Science</h3>
+          <span>2025 - Present</span>
+        </div>
+
+        <div class="item">
+          <h3>Higher Secondary Education</h3>
+          <span>2023 - 2025</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
