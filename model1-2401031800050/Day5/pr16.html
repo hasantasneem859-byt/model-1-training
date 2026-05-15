@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Box Effect</title>
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #222;
+      gap: 30px;
+    }
+
+    /* Image Box */
+    .box{
+      width: 400px;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    .box img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.5s;
+    }
+
+    /* Hover Effect */
+    .box:hover{
+      transform: translateY(-10px);
+    }
+
+    .box:hover img{
+      transform: scale(1.1);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Same Image Multiple Times -->
+
+  <div class="box">
+    <img src="pr16image.png" alt="">
+  </div>
+
+  <!-- <div class="box">
+    <img src="pr16image.png" alt="">
+  </div>
+
+  <div class="box">
+    <img src="pr16image.png" alt="">
+  </div>
+
+  <div class="box">
+    <img src="pr16image.png" alt="">
+  </div> -->
+
+</body>
+</html>
