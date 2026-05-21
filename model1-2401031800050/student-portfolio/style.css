@@ -1,0 +1,88 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: Arial, sans-serif;
+}
+
+/* HERO SECTION */
+
+.hero{
+  height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  padding-top: 80px;
+}
+
+.hero-img{
+  width: 350px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-10px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+/* SKILLS */
+
+.skill-card{
+  transition: 0.5s;
+  border-radius: 20px;
+}
+
+.skill-card:hover{
+  transform: translateY(-10px);
+}
+
+/* PROJECTS */
+
+.project-card{
+  transition: 0.5s;
+}
+
+.project-card:hover{
+  transform: scale(1.05);
+}
+
+/* CAROUSEL */
+
+.carousel-img{
+  height: 500px;
+  object-fit: cover;
+}
+
+/* RESUME */
+
+.resume-card{
+  background: white;
+}
+
+/* DARK MODE */
+
+.dark-mode{
+  background: #121212;
+  color: white;
+}
+
+/* FOOTER ICONS */
+
+footer i{
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+footer i:hover{
+  color: yellow;
+  transform: scale(1.2);
+}

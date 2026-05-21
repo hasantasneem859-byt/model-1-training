@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Student Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold" href="#">
+      Student Portfolio
+    </a>
+
+    <button class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav">
+
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#resume">Resume</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+
+      </ul>
+
+      <!-- Dark Mode Button -->
+      <button id="darkModeBtn" class="btn btn-warning ms-3">
+        Dark Mode
+      </button>
+
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO SECTION ================= -->
+
+<section id="home"
+  class="hero d-flex align-items-center justify-content-center text-center">
+
+  <div class="container">
+
+    <div class="row align-items-center">
+
+      <div class="col-lg-6">
+
+        <h1 class="display-4 fw-bold">
+          Hi, I'm Tasneem Hasan
+        </h1>
+
+        <h2 class="typing-text text-warning"></h2>
+
+        <p class="mt-4">
+          Computer Science Engineering Student passionate about
+          Web Development, Programming and AI.
+        </p>
+
+        <a href="resume/resume.pdf"
+          class="btn btn-warning btn-lg mt-3"
+          download>
+
+          Download Resume
+        </a>
+
+        <a href="#contact"
+          class="btn btn-outline-light btn-lg mt-3">
+
+          Contact Me
+        </a>
+
+      </div>
+
+      <div class="col-lg-6 text-center">
+
+        <img src="images/profile.png"
+          class="img-fluid hero-img"
+          alt="Profile Image">
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= ABOUT SECTION ================= -->
+
+<section id="about" class="py-5">
+
+  <div class="container">
+
+    <h2 class="text-center mb-5 fw-bold">
+      About Me
+    </h2>
+
+    <div class="row align-items-center">
+
+      <div class="col-md-6">
+
+        <img src="images/coding.jpg"
+          class="img-fluid rounded shadow"
+          alt="Coding">
+
+      </div>
+
+      <div class="col-md-6">
+
+        <h3>Hello!</h3>
+
+        <p>
+          I am a Computer Science Engineering student interested in
+          Web Development, AI, and Programming.
+        </p>
+
+        <p>
+          I love creating modern websites and improving my technical skills.
+        </p>
+
+        <h5>Education</h5>
+
+        <ul>
+          <li>B.Tech in Computer Science Engineering</li>
+          <li>Expected Graduation: 2028</li>
+        </ul>
+
+        <h5>Hobbies</h5>
+
+        <ul>
+          <li>Coding</li>
+          <li>Designing</li>
+          <li>Learning AI</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= SKILLS SECTION ================= -->
+
+<section id="skills" class="py-5 bg-light">
+
+  <div class="container">
+
+    <h2 class="text-center fw-bold mb-5">
+      My Skills
+    </h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-3">
+        <div class="card skill-card text-center p-4 shadow">
+          <i class="fa-brands fa-html5 fa-3x text-danger"></i>
+          <h4 class="mt-3">HTML</h4>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card skill-card text-center p-4 shadow">
+          <i class="fa-brands fa-css3-alt fa-3x text-primary"></i>
+          <h4 class="mt-3">CSS</h4>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card skill-card text-center p-4 shadow">
+          <i class="fa-brands fa-js fa-3x text-warning"></i>
+          <h4 class="mt-3">JavaScript</h4>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card skill-card text-center p-4 shadow">
+          <i class="fa-brands fa-bootstrap fa-3x text-purple"></i>
+          <h4 class="mt-3">Bootstrap</h4>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= PROJECTS SECTION ================= -->
+
+<section id="projects" class="py-5">
+
+  <div class="container">
+
+    <h2 class="text-center fw-bold mb-5">
+      Projects
+    </h2>
+
+    <div class="row g-4">
+
+      <!-- Project 1 -->
+
+      <div class="col-md-4">
+
+        <div class="card shadow project-card">
+
+          <img src="images/project1.jpg"
+            class="card-img-top"
+            alt="Project">
+
+          <div class="card-body">
+
+            <h5 class="card-title">
+              Registration Form
+            </h5>
+
+            <p class="card-text">
+              Responsive Registration Form using Bootstrap.
+            </p>
+
+            <button class="btn btn-warning">
+              Live Demo
+            </button>
+
+            <button class="btn btn-dark">
+              GitHub
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+
+      <div class="col-md-4">
+
+        <div class="card shadow project-card">
+
+          <img src="images/project2.jpg"
+            class="card-img-top"
+            alt="Project">
+
+          <div class="card-body">
+
+            <h5 class="card-title">
+              Popup Box Project
+            </h5>
+
+            <p class="card-text">
+              JavaScript Popup Box with animations.
+            </p>
+
+            <button class="btn btn-warning">
+              Live Demo
+            </button>
+
+            <button class="btn btn-dark">
+              GitHub
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+
+      <div class="col-md-4">
+
+        <div class="card shadow project-card">
+
+          <img src="images/project3.jpg"
+            class="card-img-top"
+            alt="Project">
+
+          <div class="card-body">
+
+            <h5 class="card-title">
+              Portfolio Website
+            </h5>
+
+            <p class="card-text">
+              Modern portfolio using HTML CSS JS.
+            </p>
+
+            <button class="btn btn-warning">
+              Live Demo
+            </button>
+
+            <button class="btn btn-dark">
+              GitHub
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= RESUME SECTION ================= -->
+
+<section id="resume" class="py-5 bg-light">
+
+  <div class="container text-center">
+
+    <h2 class="fw-bold mb-4">
+      Resume
+    </h2>
+
+    <div class="resume-card shadow p-5 rounded">
+
+      <h3>Download My Resume</h3>
+
+      <p>
+        Click below to download my latest resume.
+      </p>
+
+      <a href="resume/resume.pdf"
+        class="btn btn-warning btn-lg"
+        download>
+
+        Download Resume
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= CAROUSEL SECTION ================= -->
+
+<section class="py-5">
+
+  <div class="container">
+
+    <h2 class="text-center fw-bold mb-5">
+      Gallery
+    </h2>
+
+    <div id="carouselExample"
+      class="carousel slide"
+      data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="images/project1.jpg"
+            class="d-block w-100 carousel-img">
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/project2.jpg"
+            class="d-block w-100 carousel-img">
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/project3.jpg"
+            class="d-block w-100 carousel-img">
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev">
+
+        <span class="carousel-control-prev-icon"></span>
+
+      </button>
+
+      <button class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next">
+
+        <span class="carousel-control-next-icon"></span>
+
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= CONTACT SECTION ================= -->
+
+<section id="contact" class="py-5 bg-dark text-white">
+
+  <div class="container">
+
+    <h2 class="text-center fw-bold mb-5">
+      Contact Me
+    </h2>
+
+    <div class="row">
+
+      <div class="col-md-6">
+
+        <form id="contactForm">
+
+          <input type="text"
+            id="name"
+            class="form-control mb-3"
+            placeholder="Your Name">
+
+          <input type="email"
+            id="email"
+            class="form-control mb-3"
+            placeholder="Your Email">
+
+          <textarea id="message"
+            class="form-control mb-3"
+            rows="5"
+            placeholder="Message"></textarea>
+
+          <button class="btn btn-warning">
+            Submit
+          </button>
+
+        </form>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <!-- Google Map -->
+
+        <iframe
+          src="https://www.google.com/maps/embed?"
+          width="100%"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+
+        </iframe>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-black text-white text-center p-4">
+
+  <div class="mb-3">
+
+    <i class="fa-brands fa-github fa-2x mx-2"></i>
+
+    <i class="fa-brands fa-linkedin fa-2x mx-2"></i>
+
+    <i class="fa-brands fa-instagram fa-2x mx-2"></i>
+
+  </div>
+
+  <p>
+    © 2026 Student Portfolio | All Rights Reserved
+  </p>
+
+  <button onclick="topFunction()"
+    class="btn btn-warning">
+
+    Back To Top
+  </button>
+
+</footer>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
